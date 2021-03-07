@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box
+}
+
+body{
+  background-color: black;
+}
+
+#topbar{
+  margin-top:-1px;
+  height: 35px;
+  width: 100%;
+  background-image: linear-gradient(to right, black,black,black,#cc0000); 
+}
+
+h2{
+  font-family: arial;
+  color: #cc0000;
+  margin-left: 40%;
+}
+
+#searchdiv{
+  margin-left:20%;
+  height:250px; 
+  width: 900px;
+  margin-top:-10px;
+  background-image: linear-gradient(to bottom,#b30000,#990000,#660000,#330000,#1a0000);
+}
+
+.tab {
+  float: left;
+  width: 10%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  color: red;
+}
+
+.tab button.active {
+  color: red;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 100%;
+  min-height: 600px;
+}
+
+.tabcontent p{
+  color: white;
+  margin-left:0px;
+}
+#mdata p{
+  color: black;
+}
+
+  .slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color:white;
+  font-size: 20px;
+  /*padding: 8px 12px;*/
+  position: absolute;
+  margin-top:-60px;
+  margin-left:30%;
+  height:100px;
+  background-opacity:1;
+}
+
+
+.text2 {
+  color:white;
+  font-size: 20px;
+  /*padding: 8px 12px;*/
+  position: absolute;
+  /*bottom: 8px;
+  width: 100%;*/
+  /*top:75%;*/
+  margin-top:-60px;
+  margin-left:30%;
+  /*height:300px;*/
+  background-opacity:1;
+}
+
+  .content{
+    max-width: 700px;
+    /*box-shadow: 2px 4px #888888;*/
+    height: auto;
+  }
+  .news {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .column {
+    float: left;
+    padding: 10px;
+    /*height: 300px;  Should be removed. Only for demonstration */
+  }
+
+  .column img{
+    object-fit: cover;
+    width: 110px;
+   
+  }
+
+  .send_search_form{
+    margin-bottom: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .left {
+    width: 125px;
+    border-left: 4px solid red;
+  }
+
+
+  .right {
+    width: 77%;
+    display:block;
+  }
+
+  .right p {
+    margin-bottom: -10px;
+    margin-top: 0px;
+  }
+  .card{
+    display: block;
+    min-width: 500px;
+    min-height: 220px;
+  }
+  .showmore{
+    padding:5px;
+    margin-left: 15px;
+    border-radius: 2px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+  }
+
+  label{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .column_home {
+    float: left;
+    width: 23.5%;
+    background-color: #f7f7f7;;
+    border: 1px solid black;
+    margin-right: 9px;
+    font-size: 10px;
+    height: 370px;
+    border-radius: 5px;
+    box-shadow: 1px 1px #ddd;
+  }
+  .srchbtn{
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    width: 70px;
+    border: none;
+  }
+
+  .srchbtn:hover{
+    /*border:2px solid darkred;*/
+    background-color: #800000;
+    /*border:2px solid darkblue;*/
+
+
+  }
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content Box */
+  #modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 63%; /* Could be more or less, depending on screen size */
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #cc0000;
+  color:white;
+  border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #cc0000;
+  color:white;
+  border-radius: 50%;
+}
+
+#foot{
+  margin-left:200px;
+  width: 90%;
+  height: 45px;
+  background-color: #800000;
+  margin-top: 100px;
+}
+
+#ftext{
+  font-family: arial;
+  font-size: 12px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+#tbox{
+  border-radius: 5px;
+  width: 350px;
+}
+
+#displaydata{
+  min-height: 300px;
+  margin-left: 20%;
+}
+
+#pyear{
+  margin-left:15px;
+  font-size:11px;
+  font-family:Georgia,Sans-serif;
+  margin-bottom:-5px;
+}
+
+#vavg{
+  font-size:11px;
+  color:#cc0000;
+  margin-left:15px;
+  font-family:Georgia,Sans-serif;
+  display:inline;
+}
+#vcnt{
+  font-size:11px;
+  font-family:Georgia,serif;
+  display:inline;
+}
+
+#movw{
+  font-size:12px;
+  margin-left:15px;
+  font-family:arial;
+}
+#mtitle{
+  font-size:16px;
+  margin-left:15px;
+  font-family:arial;
+}
+
+#mtitle2{
+  font-size:17px;
+  margin-left:17px;
+  display:inline;
+}
+
+#lstr{
+ font-size:15px;
+ margin-left:14px 
+}
+
+.aname{
+  font-size:14px;
+  font-weight:900;
+  margin-bottom:0px;
+}
+
+.cname{
+  margin-top:0px;
+  font-size:12px;
+}
+
+.rname{
+  font-size:12px;
+  font-weight:900;
+  display:inline;
+}
+
+.rdate{
+  font-size:12px;
+  font-weight:900;
+  display:inline;
+}
+
+.rting{
+  font-size:12px;
+  color:#cc0000;
+  margin-bottom:-10px;
+}
+
+hr{
+  width:600px;
+  align:center;
+  color:#cccccc;
+}

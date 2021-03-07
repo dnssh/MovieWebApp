@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+
+  <div id="topbar">
+    <h2>Supplyframe Challenge</h2>
+  </div>
+
+
+  <div id="Pari" class="tabcontent">
+    <div id="searchdiv">
+      <p style="color: white;text-align:center;font-size: 25px;font-family: arial;"><br>Search</p>
+      <form name="send_search_form" class="send_search_form" onsubmit="decide(event);">
+        <label for="searchbox" style="color: white;margin-left: 30%;">
+          Keyword<text style="color:red">*</text>
+        </label>  
+        <input id="tbox" type="text" name="searchbox">
+       
+        <br><br>
+        <input class="button srchbtn" type="Submit" style="margin-left: 350px;" value="Search">
+        <input class="button srchbtn" id="allclr" type="button" style="margin-left: 30px;" value="Clear" onclick="allclear();">
+      </form>
+    </div>
+
+    <div style="margin-left: 20%;">
+    <p id="showres" style="color: white;"></p>
+    </div>
+
+    <div id="displaydata">
+    </div>
+
+
+  <div class="pagination" style="margin-left: 60%;">
+    <!-- <a >&laquo;</a> -->
+    <a class="page" onclick="decide(event,ival=5);">1</a>
+    <a class="page" onclick="decide(event,ival=10);">2</a>
+    <a class="page" onclick="decide(event,ival=15);">3</a>
+    <!-- <a href="#">&raquo;</a> -->
+  </div>
+
+    <div id="foot">
+        <p id="ftext" align="right">
+          <i>Developed by Devansh Shah <br> Powered by TMDB API</i></p>  
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <div id="modal-content" style="background-color: #d9d9d9;">
+          <span class="close" onclick="exit()";>&times;</span>
+          <div id="mdata">
+            <div>
+              <img id="backdrop">
+            </div>
+
+            <div style="width:80%, min-height:200px;">
+              <p id="desc"></p>
+            </div>
+
+            <div>
+              <p style="margin-left: 15px;">Cast:</p>
+              <div id="castdiv" style="width:100%;margin-left: 10px;">
+              </div>
+            </div>
+
+
+            <div>
+              <p>Reviews</p>
+              <div id="reviewdiv">
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+  </div> <!-- END Paris Tab -->
+
+</body>
+</html> 
